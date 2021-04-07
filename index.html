@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Quem me deletou da steam, mostrar as ultimas pessoas que adicionei">
+    
+    <title>Quem me deletou na Steam?</title>
+
+            <link href="assets/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/vendor/tooltip/dist/tooltip.css" rel="stylesheet" type="text/css"/>
+        <link href="app/css/style.css" rel="stylesheet" type="text/css"/>
+
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Maven%20Pro">
+    
+    
+            <script src="assets/vendor/jquery/dist/jquery.min.js"></script>
+        <script src="assets/vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="assets/vendor/tooltip/dist/tooltip.min.js"></script>
+        <script src="assets/vendor/progressbar.js/dist/progressbar.min.js"></script>
+    
+    <script src="app/js/tabs.js"></script>
+    <script src="app/js/params.js"></script>
+    <script src="app/js/main.js"></script>
+    <script>
+        var site_url = 'index.html';
+        var locale = 'en';
+    </script>
+
+
+</head>
+<body>
+
+    
+    
+    <div class="main">
+        <div class="content">
+            <div class="content-wrapper">
+                
+    <div class="container">
+
+        <div class="header">
+            <label>Quem me deletou na Steam?</label>
+        </div>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" id="myTab">
+            <li class="active">
+                <a href="#check_tab" data-toggle="tab">
+                    Ver amigos excluídos
+                </a>
+            </li>
+            <li>
+                <a href="#history_tab" data-toggle="tab">
+                    Últimos amigos adicionados
+                </a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+
+            <div class="tab-pane fade in active" id="check_tab">
+                <form class="form-inline" id="check_form">
+
+                    <div class="form-group">
+                        <label for="check_steamurl">Profile URL</label>
+
+                        <input type="text"
+                               class="form-control"
+                               id="check_steamurl"
+                               maxlength="170"
+                               placeholder="http://steamcommunity.com/..."/>
+
+                        <button
+                                type="button"
+                                title="Check"
+                                id="check_btn"
+                                class="btn btn-info"
+                                aria-label="Left Align">
+                            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                </form>
+
+                <div id="progress_circle1">
+
+                </div>
+
+                <div id="check_player_info">
+                    <div class="player_avatar"></div>
+                    <div class="player_data"></div>
+                    <div class="clear"></div>
+                </div>
+                <div id="data_error1">
+                    <label></label>
+                </div>
+                <table id="check_table">
+                    <caption>Friends deleting history</caption>
+                    <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Deleted friends</th>
+                    </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+
+            </div>
+
+            <div class="tab-pane fade" id="history_tab">
+                <form class="form-inline" id="history_form">
+
+                    <div class="form-group">
+                        <label for="history_steamurl">Profile URL</label>
+
+                        <input type="text"
+                               class="form-control"
+                               id="history_steamurl"
+                               maxlength="170"
+                               placeholder="http://steamcommunity.com/..."/>
+
+                        <button
+                                type="button"
+                                title="Show"
+                                id="history_btn"
+                                class="btn btn-info"
+                                aria-label="Left Align">
+                            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+                        </button>
+                    </div>
+
+                </form>
+
+                <div id="progress_circle2">
+
+                </div>
+
+
+                <div id="history_player_info">
+                    <div class="player_avatar"></div>
+                    <div class="player_data"></div>
+                    <div class="clear"></div>
+                </div>
+                <table id="history_table">
+                    <caption>Friends adding history</caption>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nickname</th>
+                            <th>Friend since</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+                <div id="data_error2">
+                    <label></label>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>
+                © Quem me deletou na steam. by dougl4sdev
+            </p>
+            <p class="counter">
+			            <!--LiveInternet counter--><script type="text/javascript">
+			document.write("<a href='//www.liveinternet.ru/click' "+
+			"target=_blank><img src='//counter.yadro.ru/hit?t14.6;r"+
+			escape(document.referrer)+((typeof(screen)=="undefined")?"":
+			";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+			screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+			";"+Math.random()+
+			"' alt='' title='LiveInternet: показано число просмотров за 24"+
+			" часа, посетителей за 24 часа и за сегодня' "+
+			"border='0' width='88' height='31'><\/a>")
+			</script><!--/LiveInternet-->
+			</p>
+        </footer>
+
+    </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>

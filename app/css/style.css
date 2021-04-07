@@ -1,0 +1,156 @@
+html, body, .main, .content, .content-wrapper {
+    background-color: #fff;min-height: 100%;
+    height: 100%;
+}
+
+.container {
+    position: relative;
+    max-width: 900px;
+    min-width: 600px;
+    min-height: 100%;
+    border-left: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+    border-bottom: 1px solid #c7c7c7;
+    background-image: url(../img/back.png);
+}
+
+.header {
+    width: calc(100%);
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    font-family: "Maven Pro", serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.tab-content {
+    padding-bottom: 90px;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    border-top: 1px solid #c7c7c7;
+}
+footer p {
+    line-height: 60px;
+    text-align: center;
+}
+footer p.counter {
+	display: none;
+}
+
+form.form-inline {
+    width: 568px;
+    margin: 30px auto;
+}
+
+#check_steamurl, #history_steamurl {
+    width: 400px;
+}
+
+#check_btn, #history_btn {
+    width: 80px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+#progress_circle1, #progress_circle2 {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+#data_error1, #data_error2 {
+    color: #b92c28;
+    padding: 0 50px;
+    width: 400px;
+    margin: auto;
+    display: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+#history_player_info, #check_player_info {
+    display: none;
+    width: 600px;
+    margin: 0 auto 20px;
+    padding: 5px;
+    border: 1px solid #d8d8d8;
+}
+.clear{
+    clear: both;
+}
+.player_avatar, .player_data {
+    float: left;
+}
+.player_avatar {
+    margin-right: 10px;
+    border: 1px solid #DDDDDD;
+}
+.player_data {
+    line-height: 90%;
+    margin-top: 3px;
+    height: 63px;
+}
+
+
+#history_table, #check_table {
+    border: 1px solid #d8d8d8;
+    width: 600px;
+    margin: 0 auto 20px;
+    display: none;
+}
+#check_table td {
+    vertical-align: top;
+}
+#history_table caption, #check_table caption {
+    color: #0f0f0f;
+}
+#history_table tr, #check_table tr {
+    border: 1px solid #d8d8d8;
+}
+#history_table td, #history_table th, #check_table td, #check_table th {
+    padding: 5px;
+}
+#history_table .img_private {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    cursor: help;
+}
+
+@media screen and (max-device-width: 788px) {
+    .container {
+        width: 480px;
+    }
+    form.form-inline {
+        width: 300px;
+        margin: 30px auto;
+    }
+    #check_steamurl, #history_steamurl {
+        width: 300px;
+    }
+
+    #check_btn, #history_btn {
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    #data_error1, #data_error2 {
+        width: 480px;
+    }
+
+    #history_player_info, #check_player_info {
+        width: 480px;
+    }
+    #history_table, #check_table {
+        width: 480px;
+    }
+}
