@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+
+html, body, .main, .content, .content-wrapper {
+    background-image: url('../img/backgroundSteam.png');min-height: 100%;
+    height: 100%;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.nav-bar{
+    height: 110px;
+    background-color: #171A21;
+    display:flex;
+    justify-content:flex-start;
+}
+.navTabs .li-main-tab{
+    height: 110px;
+    width: 371px;
+    transition: 0.3s ease;
+    display:flex;
+    background-color: #171A21;
+    flex-direction:column;
+    text-decoration: none;
+    padding-top: 35px;
+    align-items: center;
+    cursor: auto;
+}
+.link-input{
+    width: 50vw !important;
+    height: 71px;
+    background:none;
+    margin-top: 89px;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    font-family: 'Saira',sans-serif;
+    color: #ffffff;
+    border-bottom: 5px solid #367097;
+}
+.link-input::placeholder{
+    font-family: 'Saira',sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    color: #367097;
+}
+.li-main-tab:hover{
+    height:242px;
+    filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.25));
+}
+.navOptions{
+    margin-top: 40px;
+    display: none;
+    max-height:0px;
+    transition:0.3s;
+    flex-direction: column;
+}
+.navTabs .main-tab{ 
+    font-family: 'Sarabun',sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+.navTabs .options-tab{   
+    height:66px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-bottom: 2px solid #367097;      
+    width:371px;
+    text-decoration: none !important;
+    font-family: 'Sarabun',sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+.options-tab:hover{
+    background: rgba(54, 112, 151, 0.15);
+}
+.container {
+    position: relative;
+    padding:0px;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/backgroundSteam.png');
+}
+
+.header {
+    width: calc(100%);
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    font-family: "Maven Pro", serif;
+    font-size: 36px;
+    text-align: center;
+}
+.page-title{
+    font-family: 'Saira',sans-serif;
+    font-weight: normal;
+    font-size: 34px;
+    color: #FFFFFF;
+}
+.tab-content {
+    padding-top: 63px;
+    padding-left: 10%;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 0 15px;
+    border-top: 1px solid #c7c7c7;
+}
+footer p {
+    text-align: center;
+}
+footer p.counter {
+	display: none;
+}
+
+form.form-inline {
+    width: 100%;
+}
+
+#check_steamurl, #history_steamurl {
+    width: 400px;
+}
+
+#check_btn, #history_btn {
+    width: 80px;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+#progress_circle1, #progress_circle2 {
+    display: none;
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+}
+
+#data_error1, #data_error2 {
+    color: #b92c28;
+    padding: 0 50px;
+    width: 400px;
+    margin: auto;
+    display: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+#history_player_info, #check_player_info {
+    display: none;
+    width: 600px;
+    margin: 0 auto 20px;
+    padding: 5px;
+    border: 1px solid #d8d8d8;
+}
+.clear{
+    clear: both;
+}
+.player_avatar, .player_data {
+    float: left;
+}
+.player_avatar {
+    margin-right: 10px;
+    border: 1px solid #DDDDDD;
+}
+.player_data {
+    line-height: 90%;
+    margin-top: 3px;
+    height: 63px;
+}
+
+
+#history_table, #check_table {
+    border: 1px solid #d8d8d8;
+    width: 600px;
+    margin: 0 auto 20px;
+    display: none;
+}
+#check_table td {
+    vertical-align: top;
+}
+#history_table caption, #check_table caption {
+    color: #0f0f0f;
+}
+#history_table tr, #check_table tr {
+    border: 1px solid #d8d8d8;
+}
+#history_table td, #history_table th, #check_table td, #check_table th {
+    padding: 5px;
+}
+#history_table .img_private {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    cursor: help;
+}
+
+@media screen and (max-device-width: 788px) {
+    .container {
+        width: 480px;
+    }
+    form.form-inline {
+        width: 300px;
+        margin: 30px auto;
+    }
+    #check_steamurl, #history_steamurl {
+        width: 300px;
+    }
+
+    #check_btn, #history_btn {
+        margin-top: 5px;
+        width: 300px;
+    }
+
+    #data_error1, #data_error2 {
+        width: 480px;
+    }
+
+    #history_player_info, #check_player_info {
+        width: 480px;
+    }
+    #history_table, #check_table {
+        width: 480px;
+    }
+}
